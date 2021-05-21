@@ -1,21 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import React from 'react';
+import { StyleSheet, Text,  SafeAreaView, ScrollView, StatusBar } from 'react-native';
+
+const  App= () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+
+      <Text style={styles.textTitle}>
+      I'm just typing alot of things to full up this piece while I type . this is making no sense but whatever.
+      </Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
+  },
+  scrollView: {
+    backgroundColor: 'green',
+    marginHorizontal: 10,
+  },
+  textTitle: {
+    fontSize: 50,
+    fontWeight: "bold",
   },
 });
+
+export default App;
