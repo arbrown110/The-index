@@ -45,7 +45,7 @@ const  App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'purple',
+    backgroundColor: 'white',
 
     // paddingTop: StatusBar.currentHeight,
   },
@@ -63,7 +63,8 @@ const styles = StyleSheet.create({
   listTodo: {
    margin: 20,
    padding: 20,
-  //  alignItems: 'center',
+   flexDirection: 'columns',
+    // alignItems: 'baseline',
   //  justifyContent: 'center',
    borderWidth: 2,
     
@@ -72,3 +73,6 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
+/// align item can only be a container . Will need to change code to make todo list .
