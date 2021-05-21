@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { StyleSheet, Text, SafeAreaView, View, StatusBar, Button,  TextInput } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, View, StatusBar, Button,  TextInput, ScrollView } from 'react-native';
 import Todo from './Todo';
 
 
@@ -18,14 +18,14 @@ const  App = () => {
       <View>
 
       <Text style={styles.textTitle}>
-      I'm just typing alot of things to full up this piece while I type . this is making no sense but whatever.
+      Things I keep forgetting to do !!!
       </Text>
       </View>
-
+      <ScrollView style={styles.listTodo}>
       {todos.map(todo => (
         <Todo title={todo} />
-
       ))}
+      </ScrollView>
       {/* <Todo title='clean room'/>
       <Todo title='pay electric bill'/>
       <Todo title='pay cell phone'/>
@@ -45,19 +45,29 @@ const  App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
+    backgroundColor: 'purple',
+
+    // paddingTop: StatusBar.currentHeight,
   },
   todoInput: {
     margin: 50,
-    height: 40,
-    borderColor: 'green',
-    borderWidth: 2,
+    height: 70,
+    borderColor: 'black',
+    borderWidth: 3,
+
   },
   textTitle: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: "bold",
   },
-
+  listTodo: {
+   margin: 20,
+   padding: 20,
+  //  alignItems: 'center',
+  //  justifyContent: 'center',
+   borderWidth: 2,
+    
+  },
 
 });
 
