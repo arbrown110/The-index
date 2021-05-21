@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native'
 const Todo = () => {
     return (
         <View>
-            <Text></Text>
+            <Text>
+            Big time ball , pay your bills!!!
+            </Text>
         </View>
     )
 }
@@ -12,3 +14,11 @@ const Todo = () => {
 export default Todo
 
 const styles = StyleSheet.create({})
+
+
+
+
+
+
+
+//rnfes = template with styles
