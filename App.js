@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { StyleSheet, Text, SafeAreaView, View, StatusBar, Button,  TextInput, ScrollView } from 'react-native';
+// import { Button } from 'react-native-elements';
+import { StyleSheet, Text, SafeAreaView, View, StatusBar,  Button, TextInput, ScrollView } from 'react-native';
 import Todo from './Todo';
 
 
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
 
   },
   textTitle: {
-    fontSize: 20,
+    fontSize: 60,
     fontWeight: "bold",
   },
   listTodo: {
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
    padding: 20,
    flexDirection: 'columns',
     // alignItems: 'baseline',
-  //  justifyContent: 'center',
+  // justifyContent: 'space-around',
    borderWidth: 2,
     
   },
