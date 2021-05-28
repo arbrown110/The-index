@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
 // import { Button } from 'react-native-elements';
-import { StyleSheet, Text, SafeAreaView, View, StatusBar,  Button, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, ImageBackground, Text, SafeAreaView, View, StatusBar,  Button, TextInput, ScrollView } from 'react-native';
 import Todo from './Todo';
+
+const image = { uri: "https://reactjs.org/logo-og.png" };
 
 
 const  App = () => {
@@ -90,6 +92,11 @@ const styles = StyleSheet.create({
    fontWeight: 'bold',
    fontSize: 200
     
+  },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
   },
 
 });
