@@ -45,7 +45,9 @@ const  App = () => {
 
 const styles = StyleSheet.create({
   container: {
+    // display: "flex";
     flex: 1,
+    padding: 24,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center'
@@ -55,7 +57,8 @@ const styles = StyleSheet.create({
   },
   todoInput: {
     margin: 10,
-    height: 50,
+    height: 100,
+    width: 200,
     borderColor: 'black',
     borderWidth: 3,
 
@@ -63,6 +66,14 @@ const styles = StyleSheet.create({
   textTitle: {
     fontSize: 60,
     fontWeight: "bold",
+    paddingVertical: 6,
+    borderWidth: 8,
+    borderColor: "#20230a",
+    borderRadius: 4,
+    backgroundColor: "#61dafb",
+    color: "#20230a",
+    
+
   },
   listTodo: {
    margin: 100,
