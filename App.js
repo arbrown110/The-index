@@ -38,7 +38,7 @@ const  App = () => {
         value={input}
         onChangeText={text => setInput(text) }
       />
-      <Button onPress={addTodo} title='Add Task' />
+      <Button onPress={addTodo} title='Add Task' type="clear" />
     </SafeAreaView>
   );
 }
@@ -47,12 +47,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center'
+
 
     // paddingTop: StatusBar.currentHeight,
   },
   todoInput: {
-    margin: 50,
-    height: 70,
+    margin: 10,
+    height: 50,
     borderColor: 'black',
     borderWidth: 3,
 
@@ -62,8 +65,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   listTodo: {
-   margin: 20,
-   padding: 20,
+   margin: 100,
+   padding: 300,
    flexDirection: 'columns',
     // alignItems: 'baseline',
   // justifyContent: 'space-around',
