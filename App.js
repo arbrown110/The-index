@@ -47,8 +47,9 @@ const styles = StyleSheet.create({
   container: {
     // display: "flex";
     flex: 1,
-    padding: 24,
+    // padding: 24,
     backgroundColor: 'grey',
+     marginTop: StatusBar.currentHeight || 0,
     alignItems: 'center',
     justifyContent: 'center'
 
@@ -79,12 +80,12 @@ const styles = StyleSheet.create({
 
   },
   listTodo: {
-   margin: 70,
-   padding: 200,
+    margin: 70,
+   padding: 70,
    flexDirection: 'columns',
     // alignItems: 'baseline',
   // justifyContent: 'space-around',
-   borderWidth: 2,
+   borderWidth: 0,
    fontStyle: 'italic',
    fontWeight: 'bold',
    fontSize: 200
