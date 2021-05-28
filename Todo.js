@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const Todo = ({ title='I need something' }) => {
     return (
         <View>
-            <Text>
+            <Text style={StyleSheet.row}>
             {title}
             </Text>
         </View>
@@ -13,7 +13,18 @@ const Todo = ({ title='I need something' }) => {
 
 export default Todo
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 24
+    },
+
+    row: {
+        padding: 4,
+        borderBottomColor: " green",
+        
+    }
+})
 
 
 

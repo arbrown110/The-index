@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     // display: "flex";
     flex: 1,
     padding: 24,
-    backgroundColor: 'white',
+    backgroundColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center'
 
@@ -61,10 +61,11 @@ const styles = StyleSheet.create({
     width: 200,
     borderColor: 'black',
     borderWidth: 3,
+    fontSize: 16
 
   },
   textTitle: {
-    fontSize: 60,
+    fontSize: 40,
     fontWeight: "bold",
     paddingVertical: 6,
     borderWidth: 8,
@@ -72,16 +73,21 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     backgroundColor: "#61dafb",
     color: "#20230a",
-    
+    // textAlign: "center",
+
+
 
   },
   listTodo: {
-   margin: 100,
-   padding: 300,
+   margin: 70,
+   padding: 200,
    flexDirection: 'columns',
     // alignItems: 'baseline',
   // justifyContent: 'space-around',
    borderWidth: 2,
+   fontStyle: 'italic',
+   fontWeight: 'bold',
+   fontSize: 200
     
   },
 
